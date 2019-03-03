@@ -8,7 +8,7 @@ describe('angularjs homepage todo list', function () { //Suite in Jasmine
     // Getting all Todo lists displayed
     element.all(by.repeater('todo in')).then(function (todoList) {
       // Asserting the TODO's count as 3
-      expect(todoList.length.toString()).toEqual('3');
+      expect(todoList.length.toString()).toEqual('0');
       todoList[2].getText().then(function (text) {
         //Verifying newly entered TODO is added
         expect(text).toEqual('write first protractor test');

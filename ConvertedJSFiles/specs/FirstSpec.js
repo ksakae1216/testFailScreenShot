@@ -10,7 +10,7 @@ describe('angularjs homepage todo list', function () {
         // Getting all Todo lists displayed
         protractor_1.element.all(protractor_1.by.repeater('todo in')).then(function (todoList) {
             // Asserting the TODO's count as 3
-            expect(todoList.length.toString()).toEqual('3');
+            expect(todoList.length.toString()).toEqual('0');
             todoList[2].getText().then(function (text) {
                 //Verifying newly entered TODO is added
                 expect(text).toEqual('write first protractor test');

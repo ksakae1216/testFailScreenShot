@@ -1,21 +1,23 @@
 {
-    "name": "protractorautomation",
-    "version": "1.0.0",
-    "description": "Protractor Typescript automation framework",
-    "main": "config.js",
-    "dependencies": {
-      "protractor": "^4.0.11"
-    },
-    "devDependencies": {},
-    "scripts": {
-      "pretest": "npm run tsc",
-      "test": "protractor ConvertedJSFiles/config.js",
-       "tsc": "tsc"
-    },
-    "keywords": [
-      "Protractor",
-      "Typescript"
-    ],
-    "author": "Vijay Daram",
-    "license": "ISC"
-  }
+  "name": "protractorautomation",
+  "version": "1.0.0",
+  "description": "Protractor Typescript automation framework",
+  "main": "config.js",
+  "dependencies": {
+    "@types/jasmine": "^3.3.9",
+    "@types/node": "^11.10.4",
+    "protractor": "^5.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "pretest": "npm run tsc",
+    "test": "protractor ConvertedJSFiles/config.js",
+    "tsc": "tsc"
+  },
+  "keywords": [
+    "Protractor",
+    "Typescript"
+  ],
+  "author": "Vijay Daram",
+  "license": "ISC"
+}
